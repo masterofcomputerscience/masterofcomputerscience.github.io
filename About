@@ -1,2 +1,10 @@
+<nav>
+  <a href="index.html">Home</a>
+  <a href="igcse-ict.html">IGCSE ICT</a>
+  <a href="igcse-cs.html">IGCSE CS</a>
+  <a href="alevel-cs.html">A-Level CS</a>
+  <a href="about.html">About</a>
+</nav>
+
 <h1>About</h1>
 <p>This website is created by a Computer Science & ICT teacher to help students with past papers and revision materials.</p>
