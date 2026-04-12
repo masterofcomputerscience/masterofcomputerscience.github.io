@@ -2,11 +2,15 @@
 
 <html>
 <head>
-  <title>About</title>
+  <title>LearnWithASQ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body { font-family: Arial; background: #f4f4f4; margin: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
 
     header {
   background: url('assets/images/header.jpg') no-repeat center center/cover;
@@ -21,24 +25,25 @@
 }
 
 header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
 }
 
 header h1,
 header p {
-  position: relative;
-  z-index: 1;
+position: relative;
+z-index: 1;
 }
 
+
     nav {
-      background: #2d3e5e;
-      padding: 10px;
+      background: #34495e;
+      padding: 12px;
       text-align: center;
     }
 
@@ -49,26 +54,21 @@ header p {
       font-weight: bold;
     }
 
-    section { padding: 20px; }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+    }
 
     .card {
       background: white;
       padding: 20px;
       margin: 15px auto;
-      max-width: 800px;
       border-radius: 8px;
+      max-width: 700px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    h2 { color: #1f2a44; }
-
-    a {
-      text-decoration: none;
-      color: #0077cc;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 
@@ -86,34 +86,24 @@ header p {
   <a href="igcse-ict.html">IGCSE ICT</a>
   <a href="igcse-cs.html">IGCSE CS</a>
   <a href="alevel-cs.html">A-Level CS</a>
-  <a href="about.html">About</a>
+  <a href="About.html">About</a>
 </nav>
 <section>
 
   <div class="card">
-    <h2>📘 Computer Science</h2>
-    <ul>
-      <li><a href="papers/cs/2022-paper1.pdf" target="_blank">2022 Paper 1</a></li>
-      <li><a href="papers/cs/2022-paper2.pdf" target="_blank">2022 Paper 2</a></li>
-      <li><a href="papers/cs/2023-paper1.pdf" target="_blank">2023 Paper 1</a></li>
-    </ul>
+    <h2>ABOUT</h2>
+    <p>
+
+— Ali Shehroze Qazalbash
+
+    </p>
   </div>
 
   <div class="card">
-    <h2>💻 ICT</h2>
-    <ul>
-      <li><a href="papers/ict/2022-paper1.pdf" target="_blank">2022 Paper 1</a></li>
-      <li><a href="papers/ict/2023-paper1.pdf" target="_blank">2023 Paper 1</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>📂 More Resources (Coming Soon)</h2>
-    <ul>
-      <li>✔ Mark Schemes</li>
-      <li>✔ Solved Papers</li>
-      <li>✔ Notes & Revision Guides</li>
-    </ul>
+    <h2>Connect</h2>
+    <p>
+      LinkedIn | COMPUTER SCIENCE |
+    </p>
   </div>
 
 </section>
