@@ -11,9 +11,13 @@
     header {
   background: url('assets/images/header.jpg') no-repeat center center/cover;
   color: white;
-  padding: 70px 20px;
   text-align: center;
   position: relative;
+
+  height: 300px;      /* 👈 THIS fixes shrinking */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header::before {
