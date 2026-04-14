@@ -9,32 +9,31 @@
     body { font-family: Arial; background: #f4f4f4; margin: 0; }
 
     header {
-  background: url('assets/images/header.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  position: relative;
+      background: url('assets/images/header.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      position: relative;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  height: 300px;      /* 👈 THIS fixes shrinking */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
 
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-}
-
-header h1,
-header p {
-  position: relative;
-  z-index: 1;
-}
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+    }
 
     nav {
       background: #2d3e5e;
@@ -77,8 +76,8 @@ header p {
 <body>
 
 <header>
-  <h1></h1>
-  <p></p>
+  <h1>IGCSE Computer Science 0478</h1>
+  <p>Where Curiosity Meets Code</p>
 </header>
 
 <nav>
@@ -88,32 +87,80 @@ header p {
   <a href="alevel-cs.html">A-Level CS</a>
   <a href="about.html">About</a>
 </nav>
+
 <section>
 
+  <!-- INTRO -->
   <div class="card">
-    <h2>📘 Computer Science</h2>
+    <h2>📘 Course Overview</h2>
+
+    <p>
+      Ever wondered what happens the moment you hit "send"? How a search engine finds results in milliseconds?
+      How a game tracks your every move? The answers lie in Cambridge IGCSE Computer Science (0478).
+    </p>
+
+    <p>
+      This is more than a subject — it's your entry into one of the most powerful disciplines of the modern world.
+      You’ll develop logical thinking, creative problem-solving, and a deep understanding of the technology shaping everyday life.
+    </p>
+
+    <p><strong>You don’t just learn about computers. You learn to think like one — and then surpass one.</strong></p>
+  </div>
+
+  <!-- TOPICS -->
+  <div class="card">
+    <h2>🧠 What You'll Explore</h2>
+
     <ul>
-      <li><a href="papers/cs/2022-paper1.pdf" target="_blank">2022 Paper 1</a></li>
-      <li><a href="papers/cs/2022-paper2.pdf" target="_blank">2022 Paper 2</a></li>
-      <li><a href="papers/cs/2023-paper1.pdf" target="_blank">2023 Paper 1</a></li>
+      <li><strong>Problem-Solving & Algorithms:</strong> Break down complex problems into logical steps</li>
+      <li><strong>Data Representation:</strong> Learn how computers store and process data</li>
+      <li><strong>Computer Architecture:</strong> Understand how hardware works internally</li>
+      <li><strong>Networks & the Internet:</strong> Explore global communication systems</li>
+      <li><strong>Cybersecurity:</strong> Learn how systems are protected from threats</li>
+      <li><strong>Programming:</strong> Write real code and bring ideas to life</li>
     </ul>
   </div>
 
+  <!-- ASSESSMENT -->
   <div class="card">
-    <h2>💻 ICT</h2>
+    <h2>📝 Assessment Structure</h2>
+
     <ul>
-      <li><a href="papers/ict/2022-paper1.pdf" target="_blank">2022 Paper 1</a></li>
-      <li><a href="papers/ict/2023-paper1.pdf" target="_blank">2023 Paper 1</a></li>
+      <li><strong>Paper 1:</strong> Theory (1 hour 45 minutes)</li>
+      <li><strong>Paper 2:</strong> Problem-Solving & Programming (1 hour 45 minutes)</li>
+      <li><strong>Paper 3:</strong> Practical (1 hour 20 minutes)</li>
     </ul>
   </div>
 
+  <!-- PAST PAPERS -->
   <div class="card">
-    <h2>📂 More Resources (Coming Soon)</h2>
+    <h2>📂 Past Papers</h2>
+
     <ul>
-      <li>✔ Mark Schemes</li>
-      <li>✔ Solved Papers</li>
-      <li>✔ Notes & Revision Guides</li>
+      <li><a href="papers/igcse-cs/2023-paper1.pdf" target="_blank">2023 Paper 1</a></li>
+      <li><a href="papers/igcse-cs/2023-paper2.pdf" target="_blank">2023 Paper 2</a></li>
+      <li><a href="papers/igcse-cs/2023-paper3.pdf" target="_blank">2023 Paper 3</a></li>
+
+      <li><a href="papers/igcse-cs/2022-paper1.pdf" target="_blank">2022 Paper 1</a></li>
+      <li><a href="papers/igcse-cs/2022-paper2.pdf" target="_blank">2022 Paper 2</a></li>
     </ul>
+  </div>
+
+  <!-- WHY -->
+  <div class="card">
+    <h2>🚀 Why Choose IGCSE Computer Science?</h2>
+
+    <p>
+      In a world driven by data and technology, computer science is essential. This course builds skills that go beyond exams —
+      preparing you for university, careers, and real-world problem solving.
+    </p>
+
+    <p>
+      Whether you want to build apps, design games, secure systems, or simply understand technology —
+      this is where your journey begins.
+    </p>
+
+    <p><strong>The screen is blank. The cursor is blinking. What will you create?</strong></p>
   </div>
 
 </section>
