@@ -9,32 +9,31 @@
     body { font-family: Arial; background: #f4f4f4; margin: 0; }
 
     header {
-  background: url('assets/images/header.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  position: relative;
+      background: url('assets/images/header.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      position: relative;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  height: 300px;      /* 👈 THIS fixes shrinking */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
 
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-}
-
-header h1,
-header p {
-  position: relative;
-  z-index: 1;
-}
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+    }
 
     nav {
       background: #2d3e5e;
@@ -77,8 +76,8 @@ header p {
 <body>
 
 <header>
-  <h1></h1>
-  <p></p>
+  <h1>A-Level Computer Science 9618</h1>
+  <p>Master the Art of Computational Thinking</p>
 </header>
 
 <nav>
@@ -89,99 +88,71 @@ header p {
   <a href="about.html">About</a>
 </nav>
 
-    <div class="container">
+<section>
 
-        <!-- TOP SECTION -->
-        <div class="section">
-            <h1>A-Level Computer Science 9618</h1>
-            <h2>Master the Art of Computational Thinking</h2>
+  <!-- DESCRIPTION CARD -->
+  <div class="card">
+    <h2>📘 Course Overview</h2>
 
-            <p>
-                Take your passion for technology to the next level. Cambridge A-Level Computer Science (9618) 
-                is a rigorous, intellectually demanding course designed for students who don't just want to use 
-                technology — they want to understand, build, and innovate with it.
-            </p>
+    <p>
+      Take your passion for technology to the next level. Cambridge A-Level Computer Science (9618) 
+      is a rigorous, intellectually demanding course designed for students who don't just want to use 
+      technology — they want to understand, build, and innovate with it.
+    </p>
 
-            <p>
-                From the elegant logic of algorithms to the architecture powering modern processors, this course 
-                challenges you to think like a computer scientist. You'll explore the theoretical foundations 
-                that drive every line of code, every network packet, and every intelligent system in the world 
-                around you.
-            </p>
+    <p>
+      From the elegant logic of algorithms to the architecture powering modern processors, this course 
+      challenges you to think like a computer scientist. You'll explore the theoretical foundations 
+      that drive every line of code, every network packet, and every intelligent system.
+    </p>
 
-            <h2>What You'll Master:</h2>
+    <h2>What You'll Master</h2>
+    <p>
+      Data structures, programming paradigms, computer architecture, networking, databases, artificial 
+      intelligence, and mathematical foundations — all connected to real-world applications.
+    </p>
+  </div>
 
-            <p>
-                Dive deep into data structures, programming paradigms, computer architecture, networking, 
-                databases, artificial intelligence, and the mathematical principles that underpin it all. 
-                Whether you're writing recursive functions or designing relational databases, every concept 
-                connects theory to the real world.
-            </p>
+  <!-- PAPERS STRUCTURE -->
+  <div class="card">
+    <h2>📝 Assessment Structure</h2>
 
-            <h2>Assessment Structure — 4 Papers:</h2>
+    <ul>
+      <li><strong>Paper 1:</strong> Theory Fundamentals (3 hours)</li>
+      <li><strong>Paper 2:</strong> Problem-Solving & Programming (2 hours)</li>
+      <li><strong>Paper 3:</strong> Advanced Theory (1.5 hours)</li>
+      <li><strong>Paper 4:</strong> Practical Programming (2.5 hours)</li>
+    </ul>
+  </div>
 
-            <div class="paper">
-                <strong>🖥️ Paper 1 — Theory Fundamentals (Written Exam — 3 hours)</strong>
-                <p>
-                    A deep dive into core computer science concepts — from hardware and software to data 
-                    representation, communication, and security.
-                </p>
-            </div>
+  <!-- PAST PAPERS -->
+  <div class="card">
+    <h2>📂 Past Papers</h2>
 
-            <div class="paper">
-                <strong>💡 Paper 2 — Fundamental Problem-Solving & Programming (Written Exam — 2 hours)</strong>
-                <p>
-                    Put your algorithmic thinking to the test. Design solutions, trace programs, and demonstrate 
-                    your programming knowledge on paper.
-                </p>
-            </div>
+    <ul>
+      <li><a href="papers/alevel-cs/2023-paper1.pdf" target="_blank">2023 Paper 1</a></li>
+      <li><a href="papers/alevel-cs/2023-paper2.pdf" target="_blank">2023 Paper 2</a></li>
+      <li><a href="papers/alevel-cs/2023-paper3.pdf" target="_blank">2023 Paper 3</a></li>
+      <li><a href="papers/alevel-cs/2023-paper4.pdf" target="_blank">2023 Paper 4</a></li>
 
-            <div class="paper">
-                <strong>⌨️ Paper 3 — Advanced Theory (Written Exam — 1.5 hours)</strong>
-                <p>
-                    Explore cutting-edge topics including artificial intelligence, machine learning, 
-                    computational thinking, and systems software.
-                </p>
-            </div>
+      <li><a href="papers/alevel-cs/2022-paper1.pdf" target="_blank">2022 Paper 1</a></li>
+      <li><a href="papers/alevel-cs/2022-paper2.pdf" target="_blank">2022 Paper 2</a></li>
+    </ul>
+  </div>
 
-            <div class="paper">
-                <strong>💻 Paper 4 — Practical Programming (Practical Exam — 2.5 hours)</strong>
-                <p>
-                    The ultimate test. Sit at a real computer and solve problems using your programming language 
-                    of choice — Python, Java, or another approved language. This is where theory meets execution.
-                </p>
-            </div>
+  <!-- EXTRA -->
+  <div class="card">
+    <h2>🚀 Why Choose This Subject?</h2>
 
-            <h2>Why Choose A-Level Computer Science?</h2>
+    <p>
+      This qualification opens doors to careers in software engineering, cybersecurity, data science, 
+      and artificial intelligence. It’s not just a subject — it’s the language of the future.
+    </p>
 
-            <p>
-                This qualification is your gateway to top universities and careers in software engineering, 
-                cybersecurity, data science, artificial intelligence, and beyond. It's not just a subject — 
-                it's the language of the future.
-            </p>
+    <p><strong>Are you ready to think differently?</strong></p>
+  </div>
 
-            <p><strong>Are you ready to think differently?</strong></p>
-        </div>
-
-        <!-- BOTTOM SECTION -->
-        <div class="section">
-            <h1>Past Papers</h1>
-
-            <div class="papers-links">
-                <!-- Replace these with your actual links -->
-                <a href="#">Paper 1 (2023)</a>
-                <a href="#">Paper 2 (2023)</a>
-                <a href="#">Paper 3 (2023)</a>
-                <a href="#">Paper 4 (2023)</a>
-
-                <a href="#">Paper 1 (2022)</a>
-                <a href="#">Paper 2 (2022)</a>
-                <a href="#">Paper 3 (2022)</a>
-                <a href="#">Paper 4 (2022)</a>
-            </div>
-        </div>
-
-    </div>
+</section>
 
 </body>
 </html>
